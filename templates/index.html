@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<script src="https://kit.fontawesome.com/6f8eb90693.js" crossorigin="anonymous"></script>
+	<title>Dashboard</title>
+</head>
+<body>
+	<header class="header">
+		<section class="header__title-section">
+			<h1 class="header__title">GeeksForGeeks</h1>
+			<label>
+				<i class="fa-solid fa-bars"></i>
+				<input type="checkbox">
+			</label>
+		</section>
+		<form class="header__searchbar-section">
+			<input type="text" placeholder="Search...">
+			<button>
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</button>
+		</form>
+		<section class="header__profile-section">
+			<i class="fa-solid fa-bell"></i>
+		</section>
+	</header>
+	<div class="wrapper">
+		<aside class="sidebar">
+			<nav class="sidebar__nav">
+				<ul class="nav__links">
+					<li class="nav-item">
+						<a href="#">
+							<i class="fa-solid fa-home"></i>
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">
+							<i class="fa-solid fa-newspaper"></i>
+							<span>Articles</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">
+							<i class="fa-solid fa-flag"></i>
+							<span>Report</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">
+							<i class="fa-solid fa-building-columns"></i>
+							<span>Institution</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">
+							<i class="fa-solid fa-user"></i>
+							<span>Profile</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">
+							<i class="fa-solid fa-gear"></i>
+							<span>Setting</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">
+							<i class="fa-solid fa-right-from-bracket"></i>
+							<span>Logout</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="main">
+			<div class="boxes-container">
+				<div class="box">
+					<div class="box__content">
+						<span>60.5k</span>
+						<span>Articles Views</span>
+					</div>
+					<i class="fa-solid fa-eye"></i>
+				</div>
+				<div class="box">
+					<div class="box__content">
+						<span>150</span>
+						<span>Likes</span>
+					</div>
+					<i class="fa-solid fa-thumbs-up"></i>
+				</div>
+				<div class="box">
+					<div class="box__content">
+						<span>320</span>
+						<span>Comments</span>
+					</div>
+					<i class="fa-solid fa-comments"></i>
+				</div>
+				<div class="box">
+					<div class="box__content">
+						<span>60.70</span>
+						<span>Published</span>
+					</div>
+					<i class="fa-solid fa-check"></i>
+				</div>
+			</div>
+			<div class="table-container">
+				<div class="table__title">
+					<h2>Recent Articles</h2>
+					<button>View All</button>
+				</div>
+			    <table class="table">
+				    <thead class="table__head">
+					    <th>Article</th>
+					    <th>Views</th>
+					    <th>Comments</th>
+					    <th>Status</th>
+				    </thead>
+				    <tbody class="table__body">
+					    <tr class="table__item-container">
+						    <td class="table-item">Articles 1</td>
+						    <td class="table-item">2.9k</td>
+						    <td class="table-item">210</td>
+						    <td class="table-item"><span class="published">Published</span></td>
+					    </tr>
+					    <tr class="table__item-container">
+						    <td class="table-item">Articles 1</td>
+						    <td class="table-item">2.9k</td>
+						    <td class="table-item">210</td>
+						    <td class="table-item"><span class="published">Published</span></td>
+					    </tr>
+					    <tr class="table__item-container">
+						    <td class="table-item">Articles 1</td>
+						    <td class="table-item">2.9k</td>
+						    <td class="table-item">210</td>
+						    <td class="table-item"><span class="published">Published</span></td>
+					    </tr>
+					    <tr class="table__item-container">
+						    <td class="table-item">Articles 1</td>
+						    <td class="table-item">2.9k</td>
+						    <td class="table-item">210</td>
+						    <td class="table-item"><span class="published">Published</span></td>
+					    </tr>
+					    <tr class="table__item-container">
+						    <td class="table-item">Articles 1</td>
+						    <td class="table-item">2.9k</td>
+						    <td class="table-item">210</td>
+						    <td class="table-item"><span class="published">Published</span></td>
+					    </tr>
+					    <tr class="table__item-container">
+						    <td class="table-item">Articles 1</td>
+						    <td class="table-item">2.9k</td>
+						    <td class="table-item">210</td>
+						    <td class="table-item"><span class="published">Published</span></td>
+					    </tr>
+					    <tr class="table__item-container">
+						    <td class="table-item">Articles 1</td>
+						    <td class="table-item">2.9k</td>
+						    <td class="table-item">210</td>
+						    <td class="table-item"><span class="published">Published</span></td>
+					    </tr>
+				    </tbody>
+			    </table>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
